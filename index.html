@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SocialApp</h1>
+        <i class="fas fa-cog" id="settings-btn"></i>
+    </header>
+    
+    <main id="posts">
+        <!-- Posts will be inserted here -->
+    </main>
+    
+    <div class="post-form" id="post-form">
+        <textarea placeholder="What's on your mind?" maxlength="280" id="post-textarea"></textarea>
+        <div class="form-actions">
+            <span class="char-count" id="char-count">280</span>
+            <div>
+                <button class="btn btn-cancel" id="cancel-btn">Cancel</button>
+                <button class="btn btn-post" id="post-btn" disabled>Post</button>
+            </div>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="nav-btn active" id="home-btn">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-btn" id="new-post-btn">
+            <i class="fas fa-plus"></i>
+            <span>Post</span>
+        </div>
+        <div class="nav-btn" id="profile-btn">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </nav>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
